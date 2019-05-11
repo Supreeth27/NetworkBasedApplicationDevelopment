@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>MyWebsite</title>
+        
+        <link rel = "stylesheet" type = "text/css" href = "styleMyItem.css">
+        <link rel = "stylesheet" type = "text/css" href = "css/font-awesome-4.7.0/css/font-awesome.css">
+        <!-- #<link rel = "stylesheet" type = "text/css" href = "⁨abc/css/font-awesome.min.css"> -->
+    </head>
+    <body>
+        <header class="name">
+            <img id ="log" src="logo.jpg" alt="Virat" style="width:100px;height:32px;">
+            <h1> Virat Fan Stop</h1>
+            <p class = "login">Not Signed in</p>
+        </header>
+
+        <nav class="user">
+            <ul>
+                <li><a href = "">Sign In</a></li>
+                <li><a href="myitems.html">My Items</a></li>
+                <li><a href="" >Cart</a></li>
+            </ul>
+        </nav>
+
+        <nav class = "site">
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "categories.html">categories</a></li>
+                <li><a href = "">Store</a></li>
+                <li><a href = "">About Virat</a></li>
+                <li><a href = "">contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <header class="user_heading">
+                Charle's Favourite Items
+            </header>
+            <section>
+                <table style="width:100%">
+                    <tr>
+                        <th>Item</th>
+                        <th>Category</th> 
+                        <th>Rating</th>
+                        <th>Your Item</th>
+                        <th>              </th>
+                    </tr>
+                    <tr>
+                        <td>Cricket Bat</td>
+                        <td>Cricketing Items</td> 
+                        <td><span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </td>
+                        <td>      </td>
+                        <td><form>
+                            <input formaction="item.html" type="submit" value="Update">
+                            <input formaction="myitems.html" type="submit" value="Delete">
+                            </form>    
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&#9889; Hat</td>
+                        <td>Indain Jersey</td> 
+                        <td><span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </td>
+                        <td>&#10004;</td>
+                        <td><form>
+                                <input formaction="item.html" type="submit" value="Update">
+                                <input formaction="myitems.html" type="submit" value="Delete">
+                            </form>    
+                        </td>
+                    </tr>
+                </table>   
+            </section>
+            <section class="selection">
+                <p>&#9889; indicates that this item is posted by you</p>
+                <p>Click <a href="">here</a> to post a new item</p>        
+            </section>
+        </main>
+
+        <footer>
+            <p>This is Virat</p>
+        </footer>
+    </body>
+</html>

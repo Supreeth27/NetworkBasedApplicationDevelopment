@@ -1,0 +1,7 @@
+use nbad
+db.itemDb.drop()
+db.users.drop()
+db.userProfile.drop()
+db.createCollection("itemDb")
+db.createCollection("users")
+db.createCollection("userProfile)

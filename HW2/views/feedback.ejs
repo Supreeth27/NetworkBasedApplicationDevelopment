@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>MyWebsite</title>
+        <link rel = "stylesheet" type = "text/css" href = "/assets/stylesheets/font-awesome-4.7.0/css/font-awesome.css">
+        <!-- <link rel = "stylesheet" type = "text/css" href = "css/font-awesome-4.7.0⁩/css⁩/font-awesome.css"> -->
+        <link rel = "stylesheet" type = "text/css" href = "/assets/stylesheets/feedback.css">
+    </head>
+    <body>
+        <div class="header-wrapper">
+            <% include ./partials/header.ejs %>
+        </div>
+        <div class="user-nav-wrapper">
+            <% include ./partials/user-navigation.ejs %>
+        </div>
+        <div class="nav-side-wrapper">
+            <% include ./partials/site-navigation.ejs %>
+        </div>   
+        <main>
+            <section>
+                <h2>Give your feedback for</h2>
+                <img src='<%= data.item.imageURL %>' alt="Virat" style="width:200px;height:240px;">
+                <article class="desc">
+                    <h3 class="desc1"><%= data.item.itemName %></h3>
+                    <p class = "desc2"><%= data.item.catalogCategory %></p>
+                    <p class = "desc3"><%= data.item.description %></p>
+                    <h4>Rating:</h4>
+                    <select>
+                        <option value="rating1">1 star</option>
+                        <option value="rating2">2 star</option>
+                        <option value="rating3">3 star</option>
+                        <option value="rating4">4 star</option>
+                        <option value="rating5">5 star</option>
+                    </select>
+                    <form class = "button1" action="/myitems"><input type="submit" value="Confirm Rating"/></form>
+                    <form class = "button2" action="/myitems"><input type="submit" value="I made it &#9989;"/></form>
+                </article>
+                
+            </section>
+        </main>
+        <div class="footer-wrapper">
+            <% include ./partials/footer.ejs %>
+        </div>
+    </body>
+</html>
