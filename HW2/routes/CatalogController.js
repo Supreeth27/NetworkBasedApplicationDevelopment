@@ -4,6 +4,7 @@ var itemDb = require('../utility/ItemDB');
 /* GET home page. */
 router.get('/',  function(req, res) {
   res.render('index');
+
 });
 router.get('/categories/catalog', function(req, res) {
     var categories = getCategories();
@@ -82,4 +83,3 @@ let getCategories = function() {
     return categories;
 };
 module.exports = router;
-njk

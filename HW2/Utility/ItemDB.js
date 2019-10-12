@@ -36,6 +36,7 @@ module.exports.getItem = function (itemCode) {
             
             return item;
         }
+        
         // console.log("Data"+i);
         
     }

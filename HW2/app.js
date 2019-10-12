@@ -12,12 +12,12 @@ var catalogController = require('./routes/CatalogController.js');
 
 //  routes defining
 app.use('/', catalogController);
-app.use('/myitems', catalogController);
-app.use('/categories/catalog',catalogController);
-app.use('/categories/item/:itemCode',catalogController);
+//app.use('/myitems', catalogController);
+//app.use('/categories/catalog',catalogController);
+//app.use('/categories/item/:itemCode',catalogController);
 // app.use('/')
-app.use('/contact', catalogController);
-app.use('/about', catalogController);
+//app.use('/contact', catalogController);
+//app.use('/about', catalogController);
 
 app.listen(8080,function(){
     console.log('app started')
