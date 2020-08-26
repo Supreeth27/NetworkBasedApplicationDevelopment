@@ -23,6 +23,7 @@ article, header, main, nav, section{
 }
 
 .name{
+
     text-align: center;
     position: relative;
     border: solid;
@@ -95,15 +96,28 @@ li{
 }
 
 .desc1{
+    float: right;
+    position: absolute;
+    top: 100px;
+    left : 480px;
     margin-top: 60px;
+    margin-right: 10px;
 }
 
 .desc2{
-    margin-top: 8px;
+    float: right;
+    position: absolute;
+    top: 120px;
+    left : 480px;
+    margin-top: 60px;
 }
 
 .desc3{
-    margin-top: 8px;
+    float: right;
+    position: absolute;
+    top: 140px;
+    left : 480px;
+    margin-top: 60px;
 }
 
 .image_desc{
@@ -119,7 +133,7 @@ li{
 }
 
 .detail1{
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .detail2{

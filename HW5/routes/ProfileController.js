@@ -188,12 +188,7 @@ router.get('/categories/item/:itemCode', [
 });
 
 
-
-router.get('/myitems/save', function(req, res) {
-    var code = req.query.itemCode;
-    var flag =0;
-    if(req.session.theUser){
-    // for(let i=0; i<req.session.userProfile.userItems.length; i++){
+// for(let i=0; i<req.session.userProfile.userItems.length; i++){
     //   if(req.session.userProfile.userItems[i].itemCode == code){
     //         flag=1;
     //    }
@@ -208,8 +203,12 @@ router.get('/myitems/save', function(req, res) {
     //       req.session.userProfile = newUserProfile;
     //     }
     //}
+router.get('/myitems/save', function(req, res) {
+    var code = req.query.itemCode;
+    var flag =0;
+    if(req.session.theUser){
+    
     itemDb.getItem(code).then(function(item){
-
       if(item){
         userDb.addItem(item,req.session.theUser).then(function(){
           userDb.getUserProfile(req.session.theUser.userId).then(function(userProfile){
